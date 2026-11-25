@@ -172,6 +172,7 @@
       .note {
         position: relative;
         width: min(100%, 620px);
+        scroll-margin-top: 16px;
         padding: clamp(30px, 7vw, 54px);
         overflow: hidden;
         border: 1px solid #e9dfd3;
@@ -581,7 +582,7 @@
           letter.classList.remove("hidden");
           letter.classList.add("show");
           letter.setAttribute("aria-hidden", "false");
-          letter.scrollIntoView({ behavior: "smooth", block: "center" });
+          letter.scrollIntoView({ behavior: "smooth", block: "start" });
         }, 1050);
       }
 
